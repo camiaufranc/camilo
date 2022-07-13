@@ -1,4 +1,6 @@
 import React from 'react';
+import CartWidget from '../CartWidget';
+
 import './NavBar.css'
 
 export const NavBar = () => {
@@ -12,16 +14,19 @@ export const NavBar = () => {
                 <div class="collapse navbar-collapse nav" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item nav-ul-li">
-                            <a class="nav-link active text-white" href="./Pages/cursos.html">Cursos</a>
+                            <a class="nav-link active text-white" href="#">Cursos</a>
                         </li>
                         <li class="nav-item nav-ul-li">
-                            <a class="nav-link active text-white" href="./Pages/seminarios.html">Seminarios</a>
+                            <a class="nav-link active text-white" href="#">Seminarios</a>
                         </li>
                         <li class="nav-item nav-ul-li">
-                            <a class="nav-link active text-white" href="./Pages/nosotros.html">Nosotros</a>
+                            <a class="nav-link active text-white" href="#">Nosotros</a>
                         </li>
                         <li class="nav-item nav-ul-li">
-                            <a class="nav-link active text-white" href="./Pages/contacto.html">Contacto</a>
+                            <a class="nav-link active text-white" href="#">
+                            <CartWidget/>
+                            </a>
+                            
                         </li>
                     </ul>
                 </div>
