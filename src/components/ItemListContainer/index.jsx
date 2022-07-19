@@ -12,7 +12,7 @@ export const ItemListContainer = ({texto}) => {
     return (
         <>
         <Title greeting={texto} />
-        <ItemCount initial={1} stock={5} onAdd={onAdd} />
+        <ItemCount initial={4} stock={5} onAdd={onAdd} />
         </>
     );
 
