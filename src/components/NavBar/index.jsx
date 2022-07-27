@@ -1,11 +1,12 @@
 import React from 'react';
 import CartWidget from '../CartWidget';
+import { NavLink } from 'react-router-dom';
 
 import './NavBar.css'
 
 export const NavBar = () => {
     return (
-        <><div><a class="titulo" href="#">Mi marca</a></div><nav class="navbar navbar-expand-lg nav">
+        <><div><NavLink class="titulo" to='/'>Mi marca</NavLink></div><nav class="navbar navbar-expand-lg nav">
             <div class="container-fluid nav">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,18 +15,18 @@ export const NavBar = () => {
                 <div class="collapse navbar-collapse nav" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item nav-ul-li">
-                            <a class="nav-link active text-white" href="#">Cursos</a>
+                            <NavLink class="nav-link active text-white" to='/categoria/cursos'>Cursos</NavLink>
                         </li>
                         <li class="nav-item nav-ul-li">
-                            <a class="nav-link active text-white" href="#">Seminarios</a>
+                            <NavLink class="nav-link active text-white" to='/categoria/seminarios'>Seminarios</NavLink>
                         </li>
                         <li class="nav-item nav-ul-li">
-                            <a class="nav-link active text-white" href="#">Nosotros</a>
+                            <NavLink class="nav-link active text-white" to='/categoria/nosotros'>Nosotros</NavLink>
                         </li>
                         <li class="nav-item nav-ul-li">
-                            <a class="nav-link active text-white" href="#">
+                            <NavLink class="nav-link active text-white" to='/cart'>
                             <CartWidget/>
-                            </a>
+                            </NavLink>
                             
                         </li>
                     </ul>
