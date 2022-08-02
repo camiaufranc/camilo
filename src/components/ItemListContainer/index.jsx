@@ -1,6 +1,7 @@
-import ItemCount from '../ItemCount';
-import ItemList from '../ItemList';
 import React, {useState, useEffect} from 'react';
+
+
+import ItemList from '../ItemList';
 import Title from '../Title';
 import { useParams } from 'react-router-dom';
 
@@ -36,7 +37,7 @@ export const ItemListContainer = ({texto}) => {
     return (
         <>
         <Title greeting={texto} />
-        <ItemCount initial={4} stock={5} onAdd={onAdd} />
+        
         <ItemList data={data}/>
         </>
     );
