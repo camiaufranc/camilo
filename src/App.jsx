@@ -10,7 +10,7 @@ import NavBar from './components/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 
-import CartProvider from './CartContext';
+import CartProvider from './CartContext.jsx';
 
 
 function App() {
