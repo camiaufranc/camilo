@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 import ItemCount from '../ItemCount';
 import {Link} from 'react-router-dom';
 
-import { useCartContext } from "../CartContext/CartContext.jsx";
+import { useCartContext } from "../../Context/CartContext.jsx";
 
 export const ItemDetail = ({ data }) => {
 
