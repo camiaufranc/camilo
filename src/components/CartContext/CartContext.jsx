@@ -9,10 +9,10 @@ const CartProvider = ({ children }) =>{
 
     const clearCart = () => setCart([]);
     
-    const isInCart = (id) => cart.find(product => product.id ===id) ? true : false;
+    const isInCart = (id) => cart.find(product => product.id === id) ? true : false;
 
     const removeProduct = (id) => setCart (cart.filter(product => product.id !== id));
-    
+
     const addProduct = (item, quantity) =>{
         if (isInCart(item.id)) {
             setCart(cart.map(product => {
@@ -37,4 +37,4 @@ const CartProvider = ({ children }) =>{
     )
 }
 
-export default CartProvider
+export default CartProvider;
