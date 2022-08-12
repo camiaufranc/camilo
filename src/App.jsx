@@ -10,7 +10,7 @@ import NavBar from './components/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 
-import CartProvider from './CartContext.jsx';
+import CartProvider from './Context/CartContext';
 
 
 function App() {
@@ -20,8 +20,8 @@ function App() {
         <CartProvider>
           <NavBar />
           <Routes>
-            <Route path='/' />
-            <Route path='/productos' element={<ItemListContainer />} />
+            <Route path='/'  element={<ItemListContainer />} />
+            <Route path='/categoria/:categoriaId' element={<ItemListContainer />} />
             <Route path='/detalle/:productoID' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<Cart />} />
           </Routes>

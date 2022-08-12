@@ -11,17 +11,14 @@ const Cart = () => {
                 {
                     cart.map(product => <ItemCart key={product.id} product={product}/>)
                 }
-                
 
                 <p>
                     total: {totalPrice()}
-                </p>
-                
+                </p>                
             </>
         );
     }
-
-
+    
     return (
         <div>Cart</div>
     )
