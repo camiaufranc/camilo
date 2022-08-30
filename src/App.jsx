@@ -20,9 +20,10 @@ function App() {
         <CartProvider>
           <NavBar />
           <Routes>
-            <Route path='/'  element={<ItemListContainer />} />
+            <Route path='/' element={<ItemListContainer />} />
+            <Route path='/categoria' element={<ItemListContainer />} />
             <Route path='/categoria/:categoriaId' element={<ItemListContainer />} />
-            <Route path='/detalle/:productoID' element={<ItemDetailContainer />} />
+            <Route path='/detalle/:productoId' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<Cart />} />
           </Routes>
         </CartProvider>
